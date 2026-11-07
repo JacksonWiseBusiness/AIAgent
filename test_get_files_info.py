@@ -7,6 +7,11 @@ def test() -> None:
     print(result)
     print("")
 
+    result = get_files_info("calculator", "pkg")
+    print("Result for 'pkg' directory:")
+    print(result)
+    print("")
+
     result = get_files_info("calculator", "/bin")
     print("Result for '/bin' directory:")
     print(result)
@@ -14,11 +19,6 @@ def test() -> None:
 
     result = get_files_info("calculator", "../")
     print("Result for '../' directory:")
-    print(result)
-    print("")
-
-    result = get_files_info("calculator", "main.py")
-    print("Result for 'main.py':")
     print(result)
 
 
